@@ -1,17 +1,13 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 import useStyles from './styles';
 
 interface Props {
-  children: ReactNode
+  children: ReactNode;
 }
 
-function AuthLayout({ children } : Props) {
-
+function AuthLayout({ children }: Props) {
   const styles = useStyles();
-
-  return (
-    <div className={styles.AuthLayout}>{children}</div>
-  )
+  return <div className={styles.AuthLayout}>{children}</div>;
 }
 
 export default AuthLayout;
